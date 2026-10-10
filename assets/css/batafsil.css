@@ -49,3 +49,50 @@
     text-decoration: none;
     border-radius: 8px;
 }
+@media (max-width: 991px) {
+    .detail {
+        width: 90%;
+        max-width: 700px;
+        padding: 40px;
+    }
+
+    .detail h1 {
+        font-size: 40px;
+    }
+
+    .detail h2 {
+        font-size: 26px;
+    }
+
+    .detail p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 575px) {
+    body {
+        padding: 20px 14px;
+    }
+
+    .detail {
+        width: 100%;
+        padding: 25px 18px;
+    }
+
+    .detail h1 {
+        font-size: 30px;
+    }
+
+    .detail h2 {
+        font-size: 21px;
+    }
+
+    .detail p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .back-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}

@@ -517,7 +517,8 @@ footer > p {
 
 .contact-item:first-child:hover p {
     color: #00aaff;
-}.review-img {
+}
+.review-img {
     width: 80px;
     height: 80px;
     margin: 0 auto 15px;
@@ -529,4 +530,275 @@ footer > p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .about {
+        gap: 30px;
+        padding: 50px 5%;
+    }
+
+    .about-img,
+    .about-text {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .skills,
+    .services,
+    .projects,
+    .experience,
+    .education,
+    .reviews,
+    .contact {
+        padding: 50px 5%;
+    }
+
+    .skills-box,
+    .services-box,
+    .projects-box,
+    .reviews-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .experience-box,
+    .education-box {
+        width: 100%;
+    }
+
+    .contact-box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .contact-item {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .project img,
+    .service img,
+    .review img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 40px 5%;
+    }
+
+    .footer-links,
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 35px 16px;
+    }
+
+    .about-img,
+    .about-text {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .about-img img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about h2,
+    .skills h2,
+    .services h2,
+    .projects h2,
+    .experience h2,
+    .education h2,
+    .reviews h2,
+    .contact h2 {
+        font-size: clamp(24px, 7vw, 32px);
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+
+    .about h3 {
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .about p,
+    .contact-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .skills,
+    .services,
+    .projects,
+    .experience,
+    .education,
+    .reviews,
+    .contact {
+        padding: 35px 16px;
+    }
+
+    .skills-box,
+    .services-box,
+    .projects-box,
+    .reviews-box {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .skill,
+    .service,
+    .project,
+    .review {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .project img,
+    .review img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .project h3,
+    .service h3,
+    .review h3,
+    .experience-item h3,
+    .education-item h3 {
+        font-size: 19px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .project p,
+    .service p,
+    .review p,
+    .experience-item p,
+    .education-item p {
+        font-size: 14px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .experience-box,
+    .education-box {
+        width: 100%;
+    }
+
+    .experience-item,
+    .education-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .experience-item > div,
+    .education-item > div {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .contact-box {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+        width: 100%;
+    }
+
+    .contact-item {
+        width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .contact-btn {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 35px 16px;
+        text-align: center;
+    }
+
+    .footer-links,
+    .social {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-links a,
+    .social a {
+        overflow-wrap: anywhere;
+    }
+
+    .footer-line {
+        max-width: 100%;
+    }
+
+    .copyright {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 360px) {
+    .about,
+    .skills,
+    .services,
+    .projects,
+    .experience,
+    .education,
+    .reviews,
+    .contact {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .about h3 {
+        font-size: 19px;
+    }
+
+    .experience-item,
+    .education-item {
+        gap: 10px;
+    }
+
+    .contact-item p {
+        font-size: 13px;
+    }
 }
