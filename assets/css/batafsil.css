@@ -1,0 +1,51 @@
+.about-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #0077ff;
+    transform: translateY(-3px);
+}
+
+.detail {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: center;
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 20px;
+}
+
+.detail h1 {
+    color: #00aaff;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.detail h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.detail p {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
