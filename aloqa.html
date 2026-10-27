@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Aloqa | Abdulboriy Adhamjonov</title>
+        <meta name="description" content="Abdulboriy Adhamjonov bilan web-sayt yaratish va hamkorlik bo‘yicha bog‘laning." />
+
+        <link rel="stylesheet" href="./assets/css/aloqa.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="./header.html" class="logo">ABDULBORIY<span>.</span></a>
+
+            <nav class="nav">
+                <a href="./header.html">Bosh sahifa</a>
+                <a href="./header.html#about">Men haqimda</a>
+                <a href="./header.html#skills">Ko‘nikmalarim</a>
+                <a href="./header.html#projects">Loyihalarim</a>
+                <a href="./aloqa.html" class="active">Aloqa</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+        </header>
+
+        <main>
+            <section class="contact-section">
+                <div class="section-label">MEN BILAN BOG‘LANING</div>
+
+                <h1>
+                    Keling, birga <span>loyiha</span><br />
+                    yaratamiz!
+                </h1>
+
+                <p class="intro">
+                    Sizda ajoyib g‘oya bormi? Men bilan bog‘laning. G‘oyangizni zamonaviy veb-saytga aylantirishga yordam beraman.
+                </p>
+
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Aloqa ma’lumotlari</h2>
+                        <p class="info-text">Savollaringiz yoki hamkorlik takliflaringiz bo‘lsa, quyidagi kanallardan foydalaning.</p>
+
+                        <a class="contact-card" href="https://t.me/Aadhamjonov" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-icon">➤</div>
+                            <div>
+                                <span>Telegram</span>
+                                <h3>@Aadhamjonov</h3>
+                            </div>
+                            <b>↗</b>
+                        </a>
+
+                        <a class="contact-card" href="https://www.instagram.com/_abdulboriy_aa/" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-icon">◎</div>
+                            <div>
+                                <span>Instagram</span>
+                                <h3>@_abdulboriy_aa</h3>
+                            </div>
+                            <b>↗</b>
+                        </a>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">&lt;/&gt;</div>
+                            <div>
+                                <span>Mutaxassislik</span>
+                                <h3>Frontend Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <span class="status-dot"></span>
+                            Yangi loyihalar uchun ochiqman
+                        </div>
+                    </div>
+
+                    <div class="form-box">
+                        <h2>Menga xabar yuboring</h2>
+                        <p class="form-description">Ma’lumotlaringizni kiriting va xabaringizni yozing.</p>
+
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Ismingiz</label>
+                                <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required minlength="2" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email manzilingiz</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Mavzu</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Mavzuni tanlang</option>
+                                    <option value="Sayt yaratish">Sayt yaratish</option>
+                                    <option value="Dizayn">Web-dizayn</option>
+                                    <option value="Hamkorlik">Hamkorlik</option>
+                                    <option value="Boshqa">Boshqa</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Xabaringiz</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Loyihangiz haqida yozing..."
+                                    required
+                                    minlength="10"
+                                ></textarea>
+                            </div>
+
+                            <button class="send-btn" type="submit">Xabarni tekshirish <span>→</span></button>
+
+                            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© <span id="year"></span> Abdulboriy Adhamjonov</p>
+            <p>HTML · CSS · JavaScript</p>
+        </footer>
+
+        <script src="./assets/js/aloqa.js"></script>
+    </body>
+</html>

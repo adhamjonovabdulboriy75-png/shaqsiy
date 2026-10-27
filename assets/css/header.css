@@ -1020,7 +1020,6 @@ button {
         gap: 10px;
     }
 }
-
 /* HARAKATNI KAMAYTIRISH */
 
 @media (prefers-reduced-motion: reduce) {
@@ -1039,4 +1038,23 @@ button {
         opacity: 1;
         transform: none;
     }
+}
+.soz {
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.alo {
+    padding: 30px 20px;
+    background-color: #00b7ff;
+    color: #fff;
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
