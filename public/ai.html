@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Abdulboriy AI | Virtual Yordamchi</title>
+
+        <link rel="icon" href="/ai.png" />
+        <link rel="stylesheet" href="./ai.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    </head>
+
+    <body>
+        <div class="ai-container">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="sidebar-logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <div>
+                        <h2>Abdulboriy<span>AI</span></h2>
+                        <p>Virtual Assistant</p>
+                    </div>
+                </div>
+
+                <button class="new-chat" id="new-chat">
+                    <i class="fa-solid fa-plus"></i>
+                    Yangi suhbat
+                </button>
+
+                <div class="sidebar-menu">
+                    <p class="menu-title">MENYU</p>
+
+                    <a href="/index.html" class="menu-item">
+                        <i class="fa-solid fa-house"></i>
+                        Bosh sahifa
+                    </a>
+
+                    <a href="#" class="menu-item active">
+                        <i class="fa-solid fa-comments"></i>
+                        AI suhbat
+                    </a>
+
+                    <a href="/index.html#aloqa" class="menu-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        Aloqa
+                    </a>
+                </div>
+
+                <div class="sidebar-bottom">
+                    <div class="profile">
+                        <div class="profile-avatar">A</div>
+
+                        <div class="profile-info">
+                            <h4>Abdulboriy</h4>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="main-content">
+                <!-- HEADER -->
+                <header class="top-header">
+                    <div class="header-left">
+                        <button class="mobile-menu" id="mobile-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+
+                        <div>
+                            <h3>Abdulboriy AI</h3>
+                            <span class="online-status">
+                                <span class="online-dot"></span>
+                                Online yordamchi
+                            </span>
+                        </div>
+                    </div>
+
+                    <a href="../index.html" class="back-home">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Bosh sahifa
+                    </a>
+                </header>
+
+                <!-- CHAT AREA -->
+                <section class="chat-area">
+                    <div class="welcome-screen" id="welcome-screen">
+                        <div class="welcome-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+
+                        <h1>
+                            Assalomu alaykum!
+                            <span>Men Abdulboriy AI</span>
+                        </h1>
+
+                        <p>Siz bilan suhbatlashishga tayyorman. Savollaringizni bemalol yozishingiz mumkin.</p>
+
+                        <div class="suggestions">
+                            <button class="suggestion" data-message="Salom, qalaysan?">
+                                <i class="fa-solid fa-hand"></i>
+                                Salomlashish
+                            </button>
+
+                            <button class="suggestion" data-message="HTML va CSS haqida tushuntir.">
+                                <i class="fa-solid fa-code"></i>
+                                Dasturlash
+                            </button>
+
+                            <button class="suggestion" data-message="Menga yangi loyiha g‘oyasini ber.">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                Loyiha g‘oyalari
+                            </button>
+
+                            <button class="suggestion" data-message="Bugun nimalarni o‘rganishim mumkin?">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                O‘rganish
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- MESSAGES -->
+                    <div class="chat-messages" id="chat-messages"></div>
+                </section>
+
+                <!-- INPUT AREA -->
+                <footer class="chat-footer">
+                    <form class="input-box" id="chat-form">
+                        <textarea id="chat-input" placeholder="Abdulboriy AI ga xabar yozing..." rows="1" required></textarea>
+
+                        <button type="submit" id="send-button">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <p class="footer-note">Abdulboriy AI xatolarga yo‘l qo‘yishi mumkin. Muhim ma'lumotlarni tekshiring.</p>
+                </footer>
+            </main>
+        </div>
+
+        <script src="./ai.js"></script>
+    </body>
+</html>

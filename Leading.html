@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Abdulboriy | Tilni tanlang</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                min-height: 100vh;
+                background: #080b0e;
+                color: white;
+                font-family: Arial, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+
+            .language-container {
+                width: 100%;
+                max-width: 850px;
+                text-align: center;
+                animation: appear 0.7s ease;
+            }
+
+            @keyframes appear {
+                from {
+                    opacity: 0;
+                    transform: translateY(25px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .logo {
+                font-size: 30px;
+                font-weight: 900;
+                margin-bottom: 65px;
+            }
+
+            .logo span,
+            h1 span {
+                color: #00bfff;
+            }
+
+            .eyebrow {
+                display: inline-block;
+                padding: 10px 18px;
+                border: 1px solid #007eaa;
+                border-radius: 7px;
+                color: #00bfff;
+                background: #00bfff12;
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                margin-bottom: 25px;
+            }
+
+            h1 {
+                font-size: clamp(30px, 5vw, 48px);
+                margin-bottom: 15px;
+            }
+
+            .description {
+                color: #aebdca;
+                line-height: 1.8;
+                margin-bottom: 45px;
+            }
+
+            .language-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            .language-card {
+                background: #101820;
+                border: 1px solid #263746;
+                border-radius: 16px;
+                padding: 35px 15px;
+                color: white;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .language-card:hover {
+                transform: translateY(-8px);
+                border-color: #00bfff;
+                box-shadow: 0 0 25px #00bfff25;
+            }
+
+            .flag {
+                font-size: 45px;
+                margin-bottom: 20px;
+            }
+
+            .language-card h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .language-card p {
+                color: #8999a8;
+                font-size: 13px;
+            }
+
+            .arrow {
+                display: block;
+                color: #00bfff;
+                font-size: 25px;
+                margin-top: 20px;
+            }
+
+            .footer {
+                margin-top: 45px;
+                color: #667786;
+                font-size: 11px;
+                letter-spacing: 2px;
+            }
+
+            @media (max-width: 600px) {
+                .logo {
+                    margin-bottom: 40px;
+                }
+
+                .language-grid {
+                    grid-template-columns: 1fr;
+                    gap: 12px;
+                }
+
+                .language-card {
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    padding: 18px;
+                    gap: 18px;
+                }
+
+                .flag {
+                    margin: 0;
+                }
+
+                .language-info {
+                    flex: 1;
+                }
+
+                .arrow {
+                    margin: 0;
+                }
+
+                .description {
+                    margin-bottom: 25px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <main class="language-container">
+            <div class="logo">ABDULBORIY<span>.</span></div>
+
+            <div class="eyebrow">WELCOME TO MY PORTFOLIO</div>
+
+            <h1>Tilni <span>tanlang</span></h1>
+
+            <p class="description">
+                Saytdan foydalanish uchun o'zingizga qulay tilni tanlang.
+                <br />
+                Please select your preferred language.
+            </p>
+
+            <div class="language-grid">
+                <button class="language-card" data-lang="uz">
+                    <div class="flag">🇺🇿</div>
+                    <div class="language-info">
+                        <h2>O'zbekcha</h2>
+                        <p>O'zbek tilida davom etish</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+
+                <button class="language-card" data-lang="ru">
+                    <div class="flag">🇷🇺</div>
+                    <div class="language-info">
+                        <h2>Русский</h2>
+                        <p>Продолжить на русском</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+
+                <button class="language-card" data-lang="en">
+                    <div class="flag">🇬🇧</div>
+                    <div class="language-info">
+                        <h2>English</h2>
+                        <p>Continue in English</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+
+            <div class="footer">© 2026 ABDULBORIY | FRONTEND DEVELOPER</div>
+        </main>
+
+        <script>
+            const cards = document.querySelectorAll('.language-card');
+
+            cards.forEach((card) => {
+                card.addEventListener('click', () => {
+                    const language = card.dataset.lang;
+
+                    localStorage.setItem('siteLanguage', language);
+
+                    window.location.href = './index.html';
+                });
+            });
+        </script>
+    </body>
+</html>

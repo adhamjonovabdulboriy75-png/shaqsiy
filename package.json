@@ -1,0 +1,27 @@
+{
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js"
+    },
+    "name": "men",
+    "version": "1.0.0",
+    "description": "Abdulboriy Adhamjonov - Frontend Developer",
+    "main": "server.js",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adhamjonovabdulboriy75-png/shaqsiy.git"
+    },
+    "keywords": [],
+    "author": "Abdulboriy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/adhamjonovabdulboriy75-png/shaqsiy/issues"
+    },
+    "homepage": "https://github.com/adhamjonovabdulboriy75-png/shaqsiy#readme",
+    "dependencies": {
+        "dotenv": "^18.0.9",
+        "express": "^5.3.0",
+        "openai": "^7.47.0"
+    }
+}
